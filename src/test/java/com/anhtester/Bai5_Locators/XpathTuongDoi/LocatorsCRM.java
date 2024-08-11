@@ -4,9 +4,10 @@ public class LocatorsCRM {
     //Trang Login CRM
     public static String headerLoginPage = "//h1[normalize-space()='Login']";
     public static String inputEmail = "//input[@id='email']";
-    public static String inputPassword = "//label[normalize-space()='Password']";
+    public static String inputPassword = "//input[@id='password']";
     public static String buttonLogin = "//button[normalize-space()='Login']";
     public static String linkForgotpw = "//a[contains(@href, 'forgot_password')]";
+    public static String checkboxRemember = "//input[@id='remember']";
 
     //Trang Dashboard
     public static String menuDashboard= "//ul[@id='side-menu']//span[normalize-space()='Dashboard']";
@@ -44,22 +45,44 @@ public class LocatorsCRM {
     public static String buttonSaveAndCreateContact = "//button[normalize-space()='Save and create contact']";
     public static String buttonSave = "//button[normalize-space()='Save and create contact']//following-sibling::button";
 
+    public static String headerProjectsPage = "//h4[normalize-space()='Projects Summary']";
+    public static String inputSearchProject = "//div[@id='projects_filter']/descendant::input";
+    public static String buttonAddNewProject= "//a[@data-title='Gantt']//preceding::a[normalize-space()='New Project']";
+
     //Trang Projects
     public static String inputProjectName = "//label[@for='name']//following-sibling::input";
-    public static String = "";
-    public static String = "";
-    public static String = "";
-    public static String = "";
-    public static String = "";
-    public static String = "";
-    public static String = "";
-    public static String = "";
+    public static String dropdownCustomer = "//button[@data-id='clientid']";
+    public static String inputSearchCustomerProject = "//button[@data-id='clientid']/following-sibling::div//input";
+    public static String checkboxCalculateProgress = "//label[normalize-space()='Calculate progress through tasks']/parent::div//input";
+    public static String sliderProẹctProgress = "//label//span[@class='label_progress']/following::input[@name='progress']";
+    public static String dropdownBillingType = "//button[@data-id='billing_type']";
+    public static String dropdownStatus = "//button[@data-id='status']";
+    public static String inputRatePerHour = "//input[@id='project_rate_per_hour']";
+    public static String inputEstHour= "//input[@id='estimated_hours']";
+    public static String dropdownMembers = "//button[@data-id='project_members[]']";
+    public static String buttonSelectall = "";
+    public static String buttonDeselectall = "";
+    public static String inputSearchMember = "//button[@data-id='project_members[]']//following-sibling::div//input";
+    public static String inputStartDate = "//input[@id='start_date']";
+    public static String iconCalendarStartDate = "//input[@id='start_date']/following-sibling::div//i";
+    public static String inputDeadline = "//input[@id='deadline']";
+    public static String calendarDeadline = "//input[@id='deadline']/following-sibling::div//i";
 
-
+    public static String inputTextAreaDescription = "//iframe[@id='description_ifr']";
+    public static String checkboxSendProjectCreatedEmail = "//label[normalize-space()='Send project created email']/preceding-sibling::input";
+    public static String buttonSaveProject = "//button[normalize-space()='Save']";
+    public static String tabProjectSettings = "//a[normalize-space()='Project Settings']";
 
 
 
     /*
+    public static String = "";
+    public static String = "";
+    public static String = "";
+    public static String = "";
+    public static String = "";
+    public static String = "";
+
     //Xpath của trang Login
 logo
 //img[@alt='Perfex CRM | Anh Tester Demo']
